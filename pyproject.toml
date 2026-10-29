@@ -1,0 +1,23 @@
+[project]
+name = "goku-instant-transmission"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Royverse", email = "roymootsana@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "mediapipe>=1.2.0",
+    "numpy>=2.5.4",
+    "opencv-python>=5.0.0.93",
+    "pygame>=2.6.1",
+    "pyvirtualcam>=0.15.0",
+]
+
+[project.scripts]
+goku-instant-transmission = "goku_instant_transmission:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
